@@ -1,0 +1,356 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+:root
+{
+    --navbarcolor: rgb(194, 194, 194);
+    --navbarbgcolor: rgb(56, 54, 54);
+    --shopnowcolor: rgb(66, 140, 252);
+}
+.header
+{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--navbarbgcolor);
+    justify-content: center;
+    & ul
+    {
+        height: 100%;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        & li{
+            margin: 0px 22px;
+            font-size: 12px;
+            color: var(--navbarcolor);
+        + li:hover{
+            cursor: pointer;
+        }
+        & .logo:hover{
+            filter: brightness(120%);
+        }
+            & a{
+                & i{
+                    color: var(--navbarcolor);
+                    font-size: 18px;
+                }
+            }
+        }   
+    }
+}
+.store{
+    & div{
+        height: 350px;
+        width: 1440px;
+        background-color: aqua;
+        position: absolute;
+        margin-top: 15px;
+        z-index: 1;
+        left: 0%;
+        display: none;
+
+    }
+}
+/* .store:hover div
+{
+    display: block;
+    transition-duration: 2s;
+} */
+.heropage{
+    height: 800px ;
+    width: 100%;
+    padding-top: 45px;
+    text-align: center;
+    background-image: url(stocks/images/heropageimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210%;
+    & .shopnow{
+        height: 42px;
+        padding-top: 10px;
+        font-size: 15px;
+        background-color: white;
+        & span{
+            color: var(--shopnowcolor);
+        }
+        & span:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    + .heropageimage{
+        & h1{
+            font-size: 50px;
+            padding-top: 45px;
+            + p{
+                font-size: 28px;
+                padding: 10px 0px 10px 0px;
+                + a{
+                    text-decoration: none;
+                    color: var(--shopnowcolor);
+                    font-size: 20px;
+                    & span:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    }
+        + .iphones{
+            height: 600px;
+            background-image: url(stocks/images/hero_iphone14pro_spring__9xo85pm6sbmm_largetall.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 210%;
+            text-align: center;
+            color: white;
+            & h1{
+                font-size: 55px;
+                padding-top: 50px;
+            + h2{
+                font-size: 30px;
+                font: lighter;
+                padding-bottom: 30px;
+            ~ a{
+                text-decoration: none;
+                font-size: 20px;
+                color: var(--shopnowcolor);
+                & span{
+                    padding: 0px 20px;
+                }   
+                & span:hover{
+                    text-decoration: underline;
+                }
+                }
+            }
+            }
+            + .iphones2{
+                height: 600px;
+                background-image: url(stocks/images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 150%;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                & h1{
+                    font-size: 50px;
+                    padding-top: 50px;
+                    + p{
+                        padding-top: 10px;
+                        font-size: 30px;
+                        padding-bottom: 20px;
+                        ~ a{
+                            text-decoration: none;
+                            font-size: 20px;
+                            color: var(--shopnowcolor);
+                            & span{
+                                padding: 0px 20px;
+                            }   
+                            & span:hover{
+                                text-decoration: underline;
+                            }
+                            }
+                    }
+                }
+                + .discover{
+                    height: 1650px;
+                    display: grid;
+                    grid-template-columns: 48.5% 48.5%;
+                    grid-template-rows: 550px 550px 550px;
+                    justify-content: space-evenly;
+                    overflow: hidden;
+                    & .dis{
+                        background-color: rgb(8, 8, 8);
+                        height: 98%;
+                        text-align: center;
+                        color: white;
+                        overflow: hidden;
+                        & h1{
+                            font-size: 35px;
+                            padding: 50px 0px 15px 0px;
+                            + p{
+                                font-size: 22px;
+                                padding-bottom: 10px;
+                                + ul{
+                                    list-style: none;
+                                    display: inline-flex;
+                                    height: 30px;
+                                    width: 220px;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    margin-bottom: 10px;
+                                    & li{
+                                        cursor: pointer;
+                                        width: fit-content;
+                                        font-size: 18px;
+                                        color: var(--shopnowcolor);
+                                    }
+                                    & li:hover{
+                                        text-decoration: underline;
+                                    }
+                                    + div{
+                                        overflow: hidden;
+                                        height: 400px;
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                    & .dis1{
+                        background-color: rgb(255, 255, 255);
+                        color: black;
+                        & h1{
+                            + p{
+                                + ul{
+                                    width: 400px;
+                                }
+                            }
+                        }
+                        + .dis2{
+                            background-color: rgb(245, 245, 245);
+                            color: black;
+                            & img{
+                                position: relative;
+                                top: -140px;
+                                left: -170px;
+                            }
+                            + .dis3{
+                                & h1{
+                                    + p{
+                                        color: white;
+                                        + ul{
+                                            + div{
+                                                & img{
+                                                    position: relative;
+                                                    top: -228px;
+                                                    left: -200px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                + .dis4{
+                                    & h1{
+                                        + p{
+                                            margin-top: -20px;
+                                            margin-bottom: 10px;
+                                            & span{
+                                                & img{
+                                                    transform: translate(0px, 10px);
+                                                }
+                                            }
+                                            + ul{
+                                                + div{
+                                                    & img{
+                                                        position: relative;
+                                                        top: -200px;
+                                                        left: -260px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    + .dis5{
+                                        & .airpodsimg{
+                                            position: relative;
+                                            top: -120px;
+                                            left: -200px;
+                                        }
+                                        + .dis6{
+                                            background-color: rgb(243, 243, 243);
+                                            color: black;
+                                            & ul{
+                                                width: 300px;
+                                                + div{
+                                                    & img{
+                                                        position: relative;
+                                                        top: -180px;
+                                                        left: -300px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    + .ani{
+                        height: 500px;
+                        display: flex;
+                        justify-content: center;
+                        overflow: hidden;
+                        margin-bottom: 10px;
+                        & img{
+                            margin-inline: 8px;
+                        }
+                        & .i1 ,.i3{
+                            filter: opacity(.4);
+                        }
+                        + .footer{
+                            background-color: rgb(243, 243, 243);
+                            font-size: 12.1px;
+                            padding: 15px 220px;
+                            color: rgb(128, 128, 128);
+                            & .paras{
+                                & p{
+                                    padding-bottom: 20px;
+                                }
+                            }
+                            & .blocks{
+                                display: flex;
+                                justify-content: space-between  ;
+                                height: auto;
+                                & .block{
+                                    & h4{
+                                        color: rgb(73, 73, 73);
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        ~ p{
+                                            padding-bottom: 10px;
+                                        }
+                                        ~ p:hover{
+                                            text-decoration: underline;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                + p{
+                                    padding-top: 35px;
+                                    font-size: 14px;
+                                    & span{
+                                        color: rgb(4, 114, 240);
+                                    }
+                                    & span:hover{
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                    }
+                                }
+                                + p::after{
+                                    content: "_____________________________________________________________________________________________________________________________________________";
+                                    display: block;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                            & .last::after{
+                                content: "_____________________________________________________________________________________________________________________________________________";
+                                display: block;
+                                padding: 10px 0px;
+                                color: rgb(175, 175, 175);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
